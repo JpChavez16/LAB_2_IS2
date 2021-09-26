@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center" >
+		        <ImageView
+		            android:id="@+id/imagen1"
+				    android:layout_width="120dp"
+					android:layout_height="120dp"
+				    android:scaleType="fitXY"
+		            android:src="@drawable/i5" />
+		        <ImageView
+		            android:id="@+id/imagen2"
+				    android:layout_width="120dp"
+					android:layout_height="120dp"
+				    android:scaleType="fitXY"
+		            android:src="@drawable/i6" />
+	     </TableRow>
+		<TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center" >
+		        <ImageView
+		            android:id="@+id/imagen3"
+				    android:layout_width="120dp"
+					android:layout_height="120dp"
+				    android:scaleType="fitXY"
+		            android:src="@drawable/i7" />
+		        <ImageView
+		            android:id="@+id/imagen4"
+				    android:layout_width="120dp"
+					android:layout_height="120dp"
+				    android:scaleType="fitXY"
+		            android:src="@drawable/i8" />
+	     </TableRow>
+    </TableLayout>
+     <EditText
+         	android:id="@+id/respuesta"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Escribe aquí la palabra"
+	        android:gravity="center" />
+	 <TextView
+	     	android:id="@+id/totaletras"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"/>   
+	 <TextView
+	    	android:id="@+id/desordenadas"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"/>  
+     <Button
+       	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:onClick="siguiente"
+        	android:text="ACEPTAR" />	        	       	  
+</LinearLayout>
